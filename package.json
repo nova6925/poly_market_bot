@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx ts-node --esm fetch_market.ts"
+    "start": "npx ts-node --esm auto_bet.ts --once",
+    "watch": "npx ts-node --esm auto_bet.ts",
+    "fetch": "npx ts-node --esm fetch_market.ts"
   },
   "keywords": [],
   "author": "",
@@ -14,9 +16,11 @@
   "dependencies": {
     "@polymarket/clob-client": "^5.1.1",
     "@types/node": "^25.0.2",
+    "@types/pg": "^8.16.0",
     "axios": "^1.13.2",
     "dotenv": "^17.2.3",
     "ethers": "^6.16.0",
+    "pg": "^8.16.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }
